@@ -142,6 +142,115 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-微信的大一统openid及unionid" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/12/20/微信的大一统openid及unionid/">微信的大一统openid及unionid</a>
+    </h1>
+  
+
+        
+        <a href="/2018/12/20/微信的大一统openid及unionid/" class="archive-article-date">
+  	<time datetime="2018-12-20T05:56:08.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-20</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+
+        <h2><span id="什么是unionid跟openid">什么是UnionID跟OpenID</span></h2><p>如果开发者拥有多个移动应用、网站应用、和公众帐号（包括小程序），可通过 UnionID 来区分用户的唯一性，因为只要是同一个微信开放平台帐号下的移动应用、网站应用和公众帐号（包括小程序），用户的 UnionID 是唯一的。换句话说，同一用户，对同一个微信开放平台下的不同应用，unionid是相同的。</p>
+<p>可以理解成为：OpenID是每一个公众号给予不同访问用户的编号，同一个用户访问不同的微信公众号，获取到的openID也不同。而UnionID是把一串公众号做成了一个群组，不同的用户在这个群组里面只有一个唯一的身份标示，那就是UnionID。</p>
+<p><img src="/assets/blogImg/4.png" alt="UnionID限制"></p>
+<p>所以接下来一个问题，便是为什么有了openID还要有unionID？</p>
+<h2><span id="为什么要有unionid">为什么要有UnionID</span></h2><p>UnionID的意义很重要，对企业而言，大一统是终极梦想，企业做成大一统是通过一个统一的账号密码，例如域账号或者自己系统的账号，而微信的大一统则是通过UnionID来实现。</p>
+<p>有这么一个实际使用的场景，一个庞大的公司有很多部门，不同部门职能不一：</p>
+<ul>
+<li>有做IT的，在微信上提供IT相关的服务</li>
+<li>有做HR的，在微信上提供企业传播或者推广</li>
+<li>有各个业务组的，提供了相关的业务操作</li>
+<li>还有收购来的公司，也提供了自己特有的业务</li>
+</ul>
+<p>每一个部门有自己的微信公众号/服务号，企业的用户需要登录去做相关操作（当然最好的情况是由IT部门统一整合），如果登录每个系统都需要输入自己特有的用户名密码，会非常麻烦。</p>
+<p>一般企业内部应对这样的情况，会有一个统一登录平台，例如SSO，如果SSO关联上UnionID，则企业内部可以把微信公众号的登陆整合，例如某用户在A公众号登陆，获取到UnionID，则用户访问到B公众号的时候，可以在后台查询到UnionID，允许他自动登录。</p>
+<p>我想，一般企业不会允许内部用户使用微信登陆到内部平台吧，不过对于外部用户而言，会是非常好的一种体验，这样直接打通了网站跟微信公众号，这个野心不可小觑。</p>
+<h2><span id="unionid的限制">UnionID的限制</span></h2><p>越是大的公司，分公司越多，造成的后果就是微信公众号注册的实体也就不一样，那么微信是如何对这块进行限制的呢？</p>
+<p><img src="/assets/blogImg/3.png" alt="UnionID限制"></p>
+<p>个人认为，这个限制面对一般中小公司基本没问题，面对体量大的公司会比较麻烦，尤其是大型互联网公司，非常依赖网络的力量，也因为资本的力量拆分成了多个子公司。</p>
+<p>那么如何应对UnionID的限制呢？当然是自己做APP啦！</p>
+<h2><span id="unionid的扩展及随想">UnionID的扩展及随想</span></h2><ul>
+<li>基础功能性<ul>
+<li>企业内部统一登录</li>
+<li>降低外部客户注册成本</li>
+</ul>
+</li>
+<li>进阶数据分析<ul>
+<li>筛查忠诚用户，从而定向营销</li>
+<li>多维度互补用户属性</li>
+</ul>
+</li>
+</ul>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">微信</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/12/20/微信的大一统openid及unionid/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-那些年用Hexo踩过的坑" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
@@ -363,6 +472,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">Hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">微信</a>
               </li>
             
             <div class="clearfix"></div>
